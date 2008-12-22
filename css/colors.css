@@ -1,0 +1,16 @@
+html { color: black;}
+
+#navbar li.active {
+  color: green;
+}
+
+/* #c0c0c0 Gray
+ * #e0e0e0 Light Gray
+ * #909090 Dark Gray
+ * #006699 Teal
+ */
+html     { background-color: #006699; }
+#header  { background-color: #d0d0d0; border-color: white;}
+#navbar  { background-color: #d0d0d0; border-color: white;}
+#content { background-color: #909090; border-color: white;}
+
