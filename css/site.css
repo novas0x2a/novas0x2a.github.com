@@ -1,10 +1,11 @@
+#body {
+    position: absolute;
+}
+
 #wrap {
-  position: absolute;
   width: 900px;
-  top: 20px;
-  left: 20px;
   padding: 0;
-  margin: 0;
+  margin: 20px auto 0 auto;
 }
 
 #header {
@@ -17,13 +18,11 @@
 }
 
 #navbar {
-  position: absolute;
   width: 120px;
-  top: 177px;
   border-width: 2px;
   border-style: solid;
   padding: 8px;
-  z-index: 2;
+  margin-top: 27px;
 }
 
 #navbar ul {
@@ -46,13 +45,12 @@
 
 #content {
   position: absolute;
+  top: 14px;
   left: 138px;
   border-width: 2px;
   border-style: solid;
-  z-index: 1;
   padding: 10px;
-  border-top: 0;
-  right: 138px;
+  width: 600px;
 }
 
 #content h1 {
