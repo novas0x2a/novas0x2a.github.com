@@ -1,10 +1,24 @@
-#body {
+@import "reset.css";
+
+body {
+    line-height: 1.3;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+#main {
     position: absolute;
+    font-family: serif;
 }
 
 #wrap {
   width: 900px;
-  padding: 0;
   margin: 20px auto 0 auto;
 }
 
@@ -13,8 +27,6 @@
   height: 150px;
   border-width: 2px;
   border-style: solid;
-  margin: 0;
-  padding: 0;
 }
 
 #navbar {
@@ -26,14 +38,8 @@
   font-size: 80%;
 }
 
-#navbar ul {
-  padding: 0;
-  margin:  0;
-  list-style: none;
-}
-
 #navbar ul>li>ul {
-  margin: 0 0 0 10px;
+  margin-left: 10px;
 }
 
 #navbar a:link,a:visited {
@@ -63,17 +69,29 @@
 }
 
 #footer {
-  font-size: 75%;
+  margin-top: 10px;
+  font-size: 60%;
   text-align: center;
 }
 
-#exist ul {
-    margin:  0 20px 0 0;
-    padding: 0;
-    list-style-position: inside;
+#exist {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.code {
+    font-family: monospace;
+}
+
+table {
+    width: 80%;
+}
+
+td {
+    width: 24%;
 }
