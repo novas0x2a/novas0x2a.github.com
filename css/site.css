@@ -35,7 +35,7 @@ p {
   border-style: solid;
   padding: 8px;
   margin-top: 27px;
-  font-size: 80%;
+  font-size: 75%;
 }
 
 #navbar ul>li>ul {
@@ -61,7 +61,7 @@ p {
 }
 
 #content h1 {
-  font-size: 110%;
+  font-size: 125%;
 }
 
 #content p {
@@ -70,7 +70,7 @@ p {
 
 #footer {
   margin-top: 10px;
-  font-size: 60%;
+  font-size: 50%;
   text-align: center;
 }
 
@@ -86,6 +86,10 @@ p {
 
 .code {
     font-family: monospace;
+}
+
+.smaller {
+    font-size: 75%;
 }
 
 table {

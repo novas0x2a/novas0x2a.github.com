@@ -4,6 +4,11 @@ colors:
     file: colors.css
   - name: Ouch
     file: colors2.css
+pages:
+  - name: Main
+    link: /
+  - name: About Me
+    link: /about.html
 ---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -36,8 +41,13 @@ colors:
       <div id="main">
         <div id="navbar">
           <ul>
-            <li class="active">Home</li>
-            <li><a href="?page=about_me">About Me</a></li>
+            {% for i in page.pages %}
+              {% if page.title == i.name %}
+                <li class="active">{{i.name}}</li>
+              {% else %}
+                <li><a href="{{i.link}}">{{i.name}}</a></li>
+              {% endif %}
+            {% endfor %}
             <li>Code
             <noscript><ul><li>Disabled due to a lack of javascript</li></ul></noscript>
               <ul id="code_list">
@@ -45,8 +55,14 @@ colors:
                 <li>kappa</li>
               </ul>
             </li>
+            <li>Badges
+              <ul>
+                <li><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0" src="/images/valid_xhtml10_blue.png" /></a></li>
+                <li><a href="http://jigsaw.w3.org/css-validator/check/referer"><img alt="Valid CSS 2.1"   src="/images/valid_css21_blue.png"   /></a></li>
+              </ul>
+            </li>
           </ul>
-          <div style="margin-top: 20px;font-size:75%">Colors:
+          <div class="smaller" style="margin-top: 20px">Colors:
             {% for i in page.colors %}
               <a href="#" onclick="pickColor('{{ i.name }}')">[{{i.name}}]</a>
             {% endfor %}

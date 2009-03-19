@@ -1,0 +1,28 @@
+---
+layout: default
+title: About Me
+others:
+  - name: del.icio.us
+    url: http://del.icio.us/novas0x2a
+  - name: Facebook
+    url: http://www.facebook.com/profile.php?id=29100746
+  - name: Flickr
+    url: http://flickr.com/photos/novas0x2a
+  - name: LastFM
+    url: http://www.last.fm/user/novas0x2a
+  - name: LinkedIn
+    url: http://www.linkedin.com/in/novas0x2a
+  - name: LiveJournal
+    url: http://novas007.livejournal.com
+  - name: tourb.us
+    url: http://tourb.us/fan/novas0x2a
+  - name: Twitter
+    url: http://twitter.com/novas0x2a
+---
+
+<p>Evidence of my existence:</p>
+<table id="exist">
+  {% tablerow r in page.others cols:2 %}
+    <img alt="Icon: {{r.name}}" src="/images/icons/{{r.name | downcase}}.png" />&nbsp;<a href="{{r.url}}">{{r.name}}</a>
+  {% endtablerow %}
+</table>

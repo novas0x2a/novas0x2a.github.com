@@ -1,23 +1,6 @@
 ---
 layout: default
 title: Main
-others:
-  - name: del.icio.us
-    url: http://del.icio.us/novas0x2a
-  - name: Facebook
-    url: http://www.facebook.com/profile.php?id=29100746
-  - name: Flickr
-    url: http://flickr.com/photos/novas0x2a
-  - name: LastFM
-    url: http://www.last.fm/user/novas0x2a
-  - name: LinkedIn
-    url: http://www.linkedin.com/in/novas0x2a
-  - name: LiveJournal
-    url: http://novas007.livejournal.com
-  - name: tourb.us
-    url: http://tourb.us/fan/novas0x2a
-  - name: Twitter
-    url: http://twitter.com/novas0x2a
 ---
 
 <h1>Hello, and welcome.</h1>
@@ -25,9 +8,3 @@ others:
   Hi. This is my site. It mostly exists to tie bits of the cloud together. I'm Mike Lundy, alias <a class="code" href="http://www.google.com/search?q=novas0x2a">novas0x2a</a>.
   I live in Silicon Valley. I work at NASA Ames Research Center in the Intelligent Robotics Group.
 </p>
-<p>More evidence of my existence follows:</p>
-<table id="exist">
-  {% tablerow r in page.others cols:4 %}
-    <img alt="Icon: {{r.name}}" src="/images/icons/{{r.name | downcase}}.png" />&nbsp;<a href="{{r.url}}">{{r.name}}</a>
-  {% endtablerow %}
-</table>
